@@ -10,7 +10,7 @@ A Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules.
     git clone https://github.com/Comf0rTS1997/MMM-pathtime.git
     ```
 2. in `MagicMirror/config`, open `config.js` Add the following in `modules` array
-    ```sh
+    ```
         {
 		module: "MMM-pathtime",
 		position: "top_bar"
