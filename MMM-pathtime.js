@@ -9,7 +9,7 @@ Module.register("MMM-pathtime", {
 		api: "https://path.api.razza.dev/v1/stations/",
 		station: "thirty_third_street",
 		interval: 30000,
-		debug: true,
+		debug: false,
 	},
 
 	start: function (){
@@ -20,12 +20,17 @@ Module.register("MMM-pathtime", {
 	getDom: function() {
 		if(this.config.debug){Log.log("[PATH Time] getDom function")};
 		let wrapper = document.createElement("div");
-		//let timestamp = document.createElement("div");
-		//timestamp.innerHTML = Date.now();
-		//wrapper.appendChild(timestamp);
+		//add timestamp
+		if(this.config.debug){
+			let timestamp = document.createElement("div");
+			timestamp.innerHTML = "[Debug] Timestamp: " + Date.now();
+			wrapper.appendChild(timestamp);
+		}
+		
 		if(this.parsedData == null){
-			if(this.config.debug){Log.error("[PATH Time] parsed Data is undefined")};
-			return;
+			if(this.config.debug){Log.log("[PATH Time] parsed Data is undefined")};
+			wrapper.innerHTML = "Loading <br>  If this message shows up too long, check station spelling.";
+			return wrapper;
 		}
 		this.parsedData.upcomingTrains.forEach(a=>{
 			let line = document.createElement("div");
@@ -43,7 +48,7 @@ Module.register("MMM-pathtime", {
 	socketNotificationReceived: function(notification, payload){
 		switch(notification){
 			case 'DATA':
-				Log.log("[PATH Time] received signal DATA");
+				if(this.config.debug){Log.log("[PATH Time] received signal DATA");}
 				this.parsedData = payload;
 				this.updateDom();
 				break;
