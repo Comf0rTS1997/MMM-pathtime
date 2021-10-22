@@ -7,7 +7,7 @@ Module.register("MMM-pathtime", {
 	// Default module config.
 	defaults: {
 		api: "https://path.api.razza.dev/v1/stations/",
-		station: "newport",
+		station: "thirty_third_street",
 		interval: 30000,
 		debug: true,
 	},
@@ -20,9 +20,9 @@ Module.register("MMM-pathtime", {
 	getDom: function() {
 		if(this.config.debug){Log.log("[PATH Time] getDom function")};
 		let wrapper = document.createElement("div");
-		let timestamp = document.createElement("div");
-		timestamp.innerHTML = Date.now();
-		wrapper.appendChild(timestamp);
+		//let timestamp = document.createElement("div");
+		//timestamp.innerHTML = Date.now();
+		//wrapper.appendChild(timestamp);
 		if(this.parsedData == null){
 			if(this.config.debug){Log.error("[PATH Time] parsed Data is undefined")};
 			return;
