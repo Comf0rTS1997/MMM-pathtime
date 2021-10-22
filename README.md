@@ -27,7 +27,7 @@ A Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules.
 | debug      | If the debug mode is on                                                    | false                                       |
 
 ### api
-1. This module is based on the api provided by @mrazza `https://github.com/mrazza/path-data`, you can read more about it at `https://medium.com/@mrazza/programmatic-path-real-time-arrival-data-5d0884ae1ad6#ab14`
+1. This module is based on the api provided by @mrazza [Project Link](https://github.com/mrazza/path-data), you can read more about it at [Programmatic PATH Real-time Arrival Data](https://medium.com/@mrazza/programmatic-path-real-time-arrival-data-5d0884ae1ad6#ab14)
 2. You don't need to change the api config most of the time, unless you want to run or implement your own version of the api.
 
 ### station
