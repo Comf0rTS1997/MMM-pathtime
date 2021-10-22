@@ -1,5 +1,6 @@
 # MMM-pathtime
-A Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules.
+An unofficial Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules.
+This module is not endorsed nor supported by the Port Authority of NY and NJ.
 
 ## Screenshot
 <img src="img/screen_shot.png">
