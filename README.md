@@ -33,21 +33,21 @@ This module is not endorsed nor supported by the Port Authority of NY and NJ.
 
 ### station
 From `https://github.com/mrazza/path-data/blob/master/README.md`, station has to be one of the following:
-    ```
-    newark
-    harrison
-    journal_square
-    grove_street
-    exchange_place
-    world_trade_center
-    newport
-    hoboken
-    christopher_street
-    ninth_street
-    fourteenth_street
-    twenty_third_street
-    thirty_third_street
-    ```
+    | stations:          |
+    | ------------------ |
+    | newark             |
+    | harrison           |
+    | journal_square     |
+    | grove_street       |
+    | exchange_place     |
+    | world_trade_center |
+    | newport            |
+    | hoboken            |
+    | christopher_street |
+    | ninth_street       |
+    | fourteenth_street  |
+    | twenty_third_street|
+    | thirty_third_street|
 
 ### interval
 You can change how often the module refresh here. Input the value in milliseconds. The default value is 30000, which is 30 secs.
