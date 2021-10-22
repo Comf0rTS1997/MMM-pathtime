@@ -60,3 +60,7 @@ You can change how often the module refresh here. Input the value in millisecond
 
 ## Lincense
 MIT lincense
+
+## Contribution
+Post issues if you have any questions or problems about this module.
+Comment, like ,and subscribe if you find this module helpful.
