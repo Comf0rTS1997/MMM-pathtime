@@ -12,9 +12,9 @@ A Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules.
 2. in `MagicMirror/config`, open `config.js` Add the following in `modules` array
     ```sh
         {
-			module: "MMM-pathtime",
-			position: "top_bar"
-		},
+		module: "MMM-pathtime",
+		position: "top_bar"
+	},
     ```
     Change position to whichever position you want.
 
@@ -50,3 +50,6 @@ From `https://github.com/mrazza/path-data/blob/master/README.md`, station has to
 
 ### interval
 You can change how often the module refresh here. Input the value in milliseconds. The default value is 30000, which is 30 secs.
+
+## Lincense
+MIT lincense
