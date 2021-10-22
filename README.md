@@ -14,7 +14,12 @@ This module is not endorsed nor supported by the Port Authority of NY and NJ.
     ```
         {
 		module: "MMM-pathtime",
-		position: "top_bar"
+		position: "top_bar",
+		config: {
+			station: "thirty_third_street",
+			interval: 30000,
+			debug: false,
+		}
 	},
     ```
     Change position to whichever position you want.
