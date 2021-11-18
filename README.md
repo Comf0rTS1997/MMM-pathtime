@@ -5,6 +5,9 @@ This module is not endorsed nor supported by the Port Authority of NY and NJ.
 ## Screenshot
 <img src="img/screen_shot.png">
 
+## Update:
+Yep, the API provided by @mrazza is down. You may need to setup your own server for it.
+
 ## Installing and Config
 1. in `MagicMirror/modules` 
     ```sh
